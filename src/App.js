@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styled from 'styled-components';
-import Pro from './Pro/Pro.js'
+import Pro from './Pro/Pro.js';
+import Works from './Works/Works.js';
 
 import {
   BrowserRouter as Router,
@@ -48,6 +49,7 @@ class App extends Component {
                     </Header>
                     <About></About>
                     <Pro></Pro>
+                    <Works></Works>
                 </div>
             </Router>
         );

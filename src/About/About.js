@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import github from './img/github.png';
+import facebook from './img/facebook.png';
+import linkedin from './img/linkedin.png';
+import cv from './img/cv.png';
+
 const Container = styled.div`
+    height: 100vh;
+`
+
+const MidContainer = styled.div`
     display: flex;
-    padding-top: 12%;
+    padding-top: 20vh;
     box-sizing: border-box;
-    height: calc(100% - 25px);
 `;
 
 
 const LeftDiv = styled.div`
     background-color: #FBE2BB;
     width: 25%;
+    max-width: 270px;
     height: 250px;
     padding: 5%;
     box-sizing: border-box;
@@ -26,7 +35,6 @@ const LeftDiv = styled.div`
 `;
 
 const RightDiv = styled.div`
-
     flex: 1;
     position: relative;
 
@@ -38,28 +46,56 @@ const RightDiv = styled.div`
     }
 `;
 
+const Footer = styled.div`
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 400px);
+    position: relative;
+
+    div {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        margin: auto 0;
+    }
+
+    img {
+        margin: 0 10px;
+    }
+`;
+
 class About extends Component {
     render() {
         return (
             <Container>
-                <LeftDiv>
-                    <h1>
-                        Yang-Ting<br/>
-                        Wei
-                    </h1>
-                    <p>
-                        mtnawei@gmail.com<br/>
-                        Taipei, Taiwan
-                    </p>
-                </LeftDiv>
-                <RightDiv>
+                <MidContainer>
+                    <LeftDiv>
+                        <h1>
+                            Yang-Ting<br/>
+                            Wei
+                        </h1>
+                        <p>
+                            mtnawei@gmail.com<br/>
+                            Taipei, Taiwan
+                        </p>
+                    </LeftDiv>
+                    <RightDiv>
+                        <div>
+                            I am a human-centered design technologist who likes to program to meet human need.
+                            Also, I understand how to making use of data to improve products.
+                            I focus on the domain of energy and health care.
+                            Proficient in designing models and algorithm to analyze human behavior.
+                        </div>
+                    </RightDiv>
+                </MidContainer>
+                <Footer>
                     <div>
-                        I am a human-centered design technologist who likes to program to meet human need.
-                        Also, I understand how to making use of data to improve products.
-                        I focus on the domain of energy and health care.
-                        Proficient in designing models and algorithm to analyze human behavior.
+                        <img src={cv} alt=""/>
+                        <img src={facebook} alt=""/>
+                        <img src={github} alt=""/>
+                        <img src={linkedin} alt=""/>
                     </div>
-                </RightDiv>
+                </Footer>
             </Container>
         );
     }

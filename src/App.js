@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styled from 'styled-components';
+import Pro from './Pro/Pro.js'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -12,6 +14,8 @@ import About from './About/About.js';
 const Header = styled.div`
     text-align: center;
     margin: 20px;
+    position: fixed;
+    width: 100vw;
 `;
 
 const LinkContainer = styled.div`
@@ -43,6 +47,7 @@ class App extends Component {
                         </LinkContainer>
                     </Header>
                     <About></About>
+                    <Pro></Pro>
                 </div>
             </Router>
         );

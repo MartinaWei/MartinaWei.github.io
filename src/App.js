@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom'
 import logo from './logo.svg';
 import styled from 'styled-components';
 import Pro from './Pro/Pro.js';
@@ -36,20 +37,26 @@ const LinkContainer = styled.div`
 `;
 
 class App extends Component {
+    scrollToEle = (ele) => {
+        const node = ReactDOM.findDOMNode(this.refs[ele]);
+
+        node.scrollIntoView({ behavior: "smooth" });
+    }
+
     render() {
         return (
             <Router>
                 <div className="App">
                     <Header>
                         <LinkContainer>
-                            <NavLink to="/" exact>About</NavLink>
-                            <NavLink to="/professions">Professions</NavLink>
-                            <NavLink to="/works">Works</NavLink>
+                            <NavLink onClick={() => this.scrollToEle("about")} to="/" exact>About</NavLink>
+                            <NavLink onClick={() => this.scrollToEle("pro")} to="/professions">Professions</NavLink>
+                            <NavLink onClick={() => this.scrollToEle("works")} to="/works">Works</NavLink>
                         </LinkContainer>
                     </Header>
-                    <About></About>
-                    <Pro></Pro>
-                    <Works></Works>
+                    <About ref="about"></About>
+                    <Pro ref="pro"></Pro>
+                    <Works ref="works"></Works>
                 </div>
             </Router>
         );

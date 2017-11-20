@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
-import logo from './logo.svg';
+import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import Pro from './Pro/Pro.js';
 import Works from './Works/Works.js';
+import { Element, Link } from 'react-scroll';
 
 import {
   BrowserRouter as Router,
@@ -15,9 +15,11 @@ import About from './About/About.js';
 
 const Header = styled.div`
     text-align: center;
-    margin: 20px;
     position: fixed;
     width: 100vw;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
 `;
 
 const LinkContainer = styled.div`
@@ -37,26 +39,57 @@ const LinkContainer = styled.div`
 `;
 
 class App extends Component {
-    scrollToEle = (ele) => {
-        const node = ReactDOM.findDOMNode(this.refs[ele]);
+    constructor(props){
+        super(props);
+        this.state = {
+            active: 0
+        }
+    }
 
-        node.scrollIntoView({ behavior: "smooth" });
+    componentDidMount() {
+        window.addEventListener('scroll', () => {
+            let h = window.innerHeight;
+            let currentH = window.pageYOffset;
+
+            this.setState({ active: Math.floor((currentH) / h)});
+        })
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll');
     }
 
     render() {
+        let linksData = ['About', 'Professions', 'Works'];
+
+        let links = linksData.map((d, i) => {
+            let c = this.state.active === i ? 'active': '';
+
+            return (
+                <Link key={i} to={d} className={c} smooth={true} duration={500}>
+                    {d}
+                </Link>
+            )
+        })
+
         return (
             <Router>
                 <div className="App">
                     <Header>
                         <LinkContainer>
-                            <NavLink onClick={() => this.scrollToEle("about")} to="/" exact>About</NavLink>
-                            <NavLink onClick={() => this.scrollToEle("pro")} to="/professions">Professions</NavLink>
-                            <NavLink onClick={() => this.scrollToEle("works")} to="/works">Works</NavLink>
+                            {links}
                         </LinkContainer>
                     </Header>
-                    <About ref="about"></About>
-                    <Pro ref="pro"></Pro>
-                    <Works ref="works"></Works>
+
+                    <Element name="About">
+                        <About></About>
+                    </Element>
+                    <Element name="Professions">
+                        <Pro></Pro>
+                    </Element>
+                    <Element name="Works">
+                        <Works></Works>
+                    </Element>
                 </div>
             </Router>
         );

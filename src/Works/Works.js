@@ -43,44 +43,18 @@ class Works extends Component {
             <Container>
                 <div className="card">
                     <img src={img1} alt=""/>
-                    {/* <h1>
-                        Service<br/>
-                        Design
-                    </h1>
-                    <p>
-                        An activity combined AR
-                    </p> */}
                 </div>
                 <div className="card">
                     <img src={img2} alt=""/>
-                    {/* <h1>
-                        Energy<br/>
-                        Analysis
-                    </h1>
-                    <p>
-                        Buildding<br/>
-                        consumption<br/>
-                        analysis
-                    </p> */}
                 </div>
                 <div className="card">
                     <img src={img3} alt=""/>
-                    {/* <h1>
-                        Health<br/>
-                        Care
-                    </h1>
-                    <p>
-                        Panknow
-                    </p> */}
                 </div>
                 <div className="card">
                     <p id="works-img4">health care<br/>for Old citizens</p>
                 </div>
                 <div className="card">
                     <img src={img5} alt=""/>
-                    {/* <p>
-                        flow improvement
-                    </p> */}
                 </div>
             </Container>
         );

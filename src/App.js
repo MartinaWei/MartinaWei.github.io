@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import Pro from './Pro/Pro.js';
 import Works from './Works/Works.js';
+import Activity from './Works/Activity/Activity.js';
 import { Element, Link } from 'react-scroll';
+
 
 import {
   BrowserRouter as Router,
@@ -31,6 +33,7 @@ const LinkContainer = styled.div`
         font-size: 18px;
         color: #4A4948;
         text-decoration: none;
+        cursor: pointer;
     }
 
     .active {
@@ -75,21 +78,28 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    <Header>
-                        <LinkContainer>
-                            {links}
-                        </LinkContainer>
-                    </Header>
+                    <Route path="/" exact render={() => (
+                        <div>
+                            <Header>
+                                <LinkContainer>
+                                    {links}
+                                </LinkContainer>
+                            </Header>
 
-                    <Element name="About">
-                        <About></About>
-                    </Element>
-                    <Element name="Professions">
-                        <Pro></Pro>
-                    </Element>
-                    <Element name="Works">
-                        <Works></Works>
-                    </Element>
+                            <Element name="About">
+                                <About></About>
+                            </Element>
+                            <Element name="Professions">
+                                <Pro></Pro>
+                            </Element>
+                            <Element name="Works">
+                                <Works></Works>
+                            </Element>
+                        </div>
+                    )}/>
+                    <Route path="/activity" render={() => (
+                        <Activity/>
+                    )} />
                 </div>
             </Router>
         );

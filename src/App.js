@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import Pro from './Pro/Pro.js';
 import Works from './Works/Works.js';
-import Activity from './Works/Activity/Activity.js';
+import Service from './Works/Service/Service.js';
+import Energy from './Works/Energy/Energy.js';
 import { Element, Link } from 'react-scroll';
 
 
@@ -97,8 +98,11 @@ class App extends Component {
                             </Element>
                         </div>
                     )}/>
-                    <Route path="/activity" render={() => (
-                        <Activity/>
+                    <Route path="/service" render={() => (
+                        <Service/>
+                    )} />
+                    <Route path="/energy" render={() => (
+                        <Energy/>
                     )} />
                 </div>
             </Router>

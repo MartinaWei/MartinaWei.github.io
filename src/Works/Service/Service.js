@@ -1,59 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import How from './How.js';
-
-const Container = styled.div`
-    padding: 60px 80px;
-    h1 {
-        font-family: Avenir Next;
-        font-size: 36px;
-        font-weight: bold;
-    }
-
-    h2 {
-        font-family: Avenir Next;
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    p {
-        font-family: Helvetica;
-        font-size: 18px;
-        margin: 0;
-    }
-`;
-
-const Top = styled.div`
-    div {
-        box-sizing: border-box;
-        display: inline-block;
-        vertical-align: top;
-
-        width: 50%;
-        padding-right: 50px;
-
-    }
-`;
-
-const Mid = styled.div`
-    margin-top: 30px;
-`;
-
-const Bot = styled.div`
-    margin-top: 30px;
-
-    h3 {
-        margin: 0;
-        font-size: 24px;
-        font-family: Avenir Next;
-        font-weight: 500;
-    }
-`;
-
-const Divider = styled.div`
-    border: grey solid 10px;
-`;
+import {
+    Container,
+    Section,
+    Divider
+} from '../Template';
 
 const BoxHeader = styled.header`
     font-size: 18px;
@@ -85,32 +37,45 @@ const Box = ({header, children}) => (
 );
 
 
-class Activity extends Component {
+const InlineDiv = styled.div`
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+
+    width: 50%;
+    padding-right: 50px;
+`;
+
+class Service extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <Container>
                 <h1>Activity Design</h1>
-                <Top>
-                    <div>
+                <Section>
+                    <InlineDiv>
                         <h2>Little Holmes in Leofoo Wonderland (2016)</h2>
                         <p>Leofoo Resort Guanshi is an ecological hotel located in Hsinchu, Taiwan. They attract many visitors by providing the chance wchich people can interact with animals. However, they found most of their customers are not repeated customers. Therefore, they want to attract more repeat customers by improving their service. </p>
-                    </div>
+                    </InlineDiv>
 
-                    <div>
+                    <InlineDiv>
                         <h2>Team Role</h2>
                         <p>
                             Our team made up by 3 students from departments of Library and Information Science, Psychology and Civil Engineering separately. We did UX research and ideated together.<br/>
                             The UI was designed by Ben, the Library and Information Science student. I am responsible for making the game workable by Unity3D(C#) and Vuforia.
                         </p>
-                    </div>
-                </Top>
+                    </InlineDiv>
+                </Section>
 
-                <Mid>
+                <Section>
                     <h2>Skill</h2>
                     <p>User Experience Research (Contextual Inquiry), User Experience Design, Unity3D, C</p>
-                </Mid>
+                </Section>
 
-                <Bot>
+                <Section>
                     <h2>Methodology</h2>
 
                     <div style={{width: '60vw'}}>
@@ -149,11 +114,11 @@ class Activity extends Component {
                     <Box header={"How it works?"}>
                         <How/>
                     </Box>
-                </Bot>
+                </Section>
             </Container>
         );
     }
 
 }
 
-export default Activity;
+export default Service;

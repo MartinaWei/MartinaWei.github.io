@@ -4,6 +4,7 @@ import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
 import img5 from './img5.png';
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -41,21 +42,31 @@ class Works extends Component {
     render() {
         return (
             <Container>
-                <div className="card">
-                    <img src={img1} alt=""/>
-                </div>
-                <div className="card">
-                    <img src={img2} alt=""/>
-                </div>
-                <div className="card">
-                    <img src={img3} alt=""/>
-                </div>
-                <div className="card">
-                    <p id="works-img4">health care<br/>for Old citizens</p>
-                </div>
-                <div className="card">
-                    <img src={img5} alt=""/>
-                </div>
+                <Link to="/service">
+                    <div className="card">
+                        <img src={img1} alt=""/>
+                    </div>
+                </Link>
+                <Link to="/energy">
+                    <div className="card">
+                        <img src={img2} alt=""/>
+                    </div>
+                </Link>
+                <Link to="/">
+                    <div className="card">
+                        <img src={img3} alt=""/>
+                    </div>
+                </Link>
+                <Link to="/">
+                    <div className="card">
+                        <p id="works-img4">health care<br/>for Old citizens</p>
+                    </div>
+                </Link>
+                <Link to="/">
+                    <div className="card">
+                        <img src={img5} alt=""/>
+                    </div>
+                </Link>
             </Container>
         );
     }

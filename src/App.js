@@ -5,6 +5,7 @@ import Pro from './Pro/Pro.js';
 import Works from './Works/Works.js';
 import Service from './Works/Service/Service.js';
 import Energy from './Works/Energy/Energy.js';
+import Pakonw from './Works/Pakonw/Pakonw.js';
 import { Element, Link } from 'react-scroll';
 
 
@@ -103,6 +104,9 @@ class App extends Component {
                     )} />
                     <Route path="/energy" render={() => (
                         <Energy/>
+                    )} />
+                    <Route path="/pakonw" render={() => (
+                        <Pakonw/>
                     )} />
                 </div>
             </Router>

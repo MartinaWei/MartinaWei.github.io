@@ -4,47 +4,14 @@ import How from './How.js';
 import {
     Container,
     Section,
-    Divider
+    Divider,
+    BoxHeader,
+    BoxSection,
+    Box,
+    InlineDiv
 } from '../Template';
 
-const BoxHeader = styled.header`
-    font-size: 18px;
-    font-family: Avenir Next;
-    font-weight: 500;
-`;
 
-const BoxSection = styled.section`
-    display: flex;
-    margin-bottom: 50px;
-
-    h3 {
-        flex: none;
-        margin-right: 100px;
-    }
-
-    p {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-`;
-
-const Box = ({header, children}) => (
-    <div>
-        <BoxHeader>{header}</BoxHeader>
-        <Divider/>
-        {children}
-    </div>
-);
-
-
-const InlineDiv = styled.div`
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-
-    width: 50%;
-    padding-right: 50px;
-`;
 
 class Service extends Component {
     componentDidMount() {

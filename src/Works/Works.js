@@ -52,7 +52,7 @@ class Works extends Component {
                         <img src={img2} alt=""/>
                     </div>
                 </Link>
-                <Link to="/">
+                <Link to="/pakonw">
                     <div className="card">
                         <img src={img3} alt=""/>
                     </div>

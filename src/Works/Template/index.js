@@ -1,7 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
+class _Container extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
+    render() {
+        return (
+            <div>{this.props.children}</div>
+        )
+    }
+}
+
+const Container = styled(_Container)`
     padding: 60px 0;
     h1 {
         font-family: Avenir Next;

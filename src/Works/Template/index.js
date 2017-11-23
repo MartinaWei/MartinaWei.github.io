@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    padding: 60px 80px;
+    padding: 60px 0;
     h1 {
         font-family: Avenir Next;
         font-size: 36px;

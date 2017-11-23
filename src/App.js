@@ -20,7 +20,7 @@ import About from './About/About.js';
 const Header = styled.div`
     text-align: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     padding: 20px;
     z-index: 1;
@@ -41,6 +41,11 @@ const LinkContainer = styled.div`
     .active {
         color: #9B9B9B;
     }
+`;
+
+const Container = styled.div`
+    max-width: 1024px;
+    margin: auto;
 `;
 
 class App extends Component {
@@ -81,33 +86,37 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Route path="/" exact render={() => (
-                        <div>
-                            <Header>
-                                <LinkContainer>
-                                    {links}
-                                </LinkContainer>
-                            </Header>
+                        <Header>
+                            <LinkContainer>
+                                {links}
+                            </LinkContainer>
+                        </Header>
+                    )} />
 
-                            <Element name="About">
-                                <About></About>
-                            </Element>
-                            <Element name="Professions">
-                                <Pro></Pro>
-                            </Element>
-                            <Element name="Works">
-                                <Works></Works>
-                            </Element>
-                        </div>
-                    )}/>
-                    <Route path="/service" render={() => (
-                        <Service/>
-                    )} />
-                    <Route path="/energy" render={() => (
-                        <Energy/>
-                    )} />
-                    <Route path="/pakonw" render={() => (
-                        <Pakonw/>
-                    )} />
+                    <Container>
+                        <Route path="/" exact render={() => (
+                            <div>
+                                <Element name="About">
+                                    <About></About>
+                                </Element>
+                                <Element name="Professions">
+                                    <Pro></Pro>
+                                </Element>
+                                <Element name="Works">
+                                    <Works></Works>
+                                </Element>
+                            </div>
+                        )}/>
+                        <Route path="/service" render={() => (
+                            <Service/>
+                        )} />
+                        <Route path="/energy" render={() => (
+                            <Energy/>
+                        )} />
+                        <Route path="/pakonw" render={() => (
+                            <Pakonw/>
+                        )} />
+                    </Container>
                 </div>
             </Router>
         );

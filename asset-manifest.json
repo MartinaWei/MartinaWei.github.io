@@ -1,11 +1,19 @@
 {
   "main.css": "static/css/main.9826c792.css",
   "main.css.map": "static/css/main.9826c792.css.map",
-  "main.js": "static/js/main.4a822aee.js",
-  "main.js.map": "static/js/main.4a822aee.js.map",
+  "main.js": "static/js/main.c8611572.js",
+  "main.js.map": "static/js/main.c8611572.js.map",
+  "static/media/Office.png": "static/media/Office.1568a656.png",
+  "static/media/fig1.png": "static/media/fig1.e8ffa19c.png",
+  "static/media/fig2.png": "static/media/fig2.b46f7090.png",
+  "static/media/fig3.png": "static/media/fig3.41f8d128.png",
+  "static/media/fig4.png": "static/media/fig4.3bc8771b.png",
+  "static/media/fig5.png": "static/media/fig5.5a2bc914.png",
+  "static/media/fig6.png": "static/media/fig6.0fc8013c.png",
   "static/media/img1.png": "static/media/img1.7f4c848c.png",
   "static/media/img2.png": "static/media/img2.9eb37b8d.png",
   "static/media/img3.png": "static/media/img3.bd4f10c4.png",
   "static/media/img5.png": "static/media/img5.ad015241.png",
-  "static/media/ipad.png": "static/media/ipad.5d6cf42d.png"
+  "static/media/ipad.png": "static/media/ipad.5d6cf42d.png",
+  "static/media/solution.png": "static/media/solution.9d7229f5.png"
 }

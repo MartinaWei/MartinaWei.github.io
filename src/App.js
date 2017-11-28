@@ -10,7 +10,7 @@ import { Element, Link } from 'react-scroll';
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   NavLink
 } from 'react-router-dom';

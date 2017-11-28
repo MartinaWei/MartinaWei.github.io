@@ -9,6 +9,7 @@ import DNA from './img/DNA_word.png';
 
 const Container = styled.div`
     height: 100vh;
+    min-height: 600px;
 `
 
 const MidContainer = styled.div`
@@ -21,6 +22,7 @@ const MidContainer = styled.div`
 const LeftDiv = styled.div`
     width: 100%;
     padding: 5%;
+    padding-right: 0;
     box-sizing: border-box;
 
     h1 {
@@ -45,7 +47,8 @@ const ImgContainer = styled.div`
     display: inline-block;
     img {
         display: block;
-        margin: auto;
+        margin-right: 0;
+        float: right;
         max-width: 100%;
         max-height: 390px;
     }

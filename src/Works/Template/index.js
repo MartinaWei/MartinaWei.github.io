@@ -40,7 +40,7 @@ class Container extends React.Component {
 
     render() {
         return (
-            <Con>{this.props.children}</Con>
+            <Con {...this.props}>{this.props.children}</Con>
         )
     }
 }

@@ -36,10 +36,23 @@ const LinkContainer = styled.div`
         color: #4A4948;
         text-decoration: none;
         cursor: pointer;
+        display: inline-block;
     }
 
     .active {
         color: #9B9B9B;
+        position: relative;
+    }
+
+    .active::after {
+        content: "";
+        background-color: black;
+        width: 110%;
+        height: 2px;
+        display: inline-block;
+        position: absolute;
+        top: 110%;
+        left: -5%;
     }
 `;
 

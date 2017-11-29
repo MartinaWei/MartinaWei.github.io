@@ -1,20 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-class _Container extends React.Component {
-    componentDidMount() {
-        window.scrollTo(0, 0);
+const Con = styled.div`
+    & > * {
+        padding-left: 30px;
     }
 
-    render() {
-        return (
-            <div>{this.props.children}</div>
-        )
-    }
-}
-
-const Container = styled(_Container)`
-    padding: 60px 0;
     h1 {
         font-family: Avenir Next;
         font-size: 36px;
@@ -33,7 +24,27 @@ const Container = styled(_Container)`
         font-size: 18px;
         margin: 0;
     }
+
+    img {
+        max-width: 100%;
+        margin: auto;
+        display: inline-block;
+        display: block;
+    }
 `;
+
+class Container extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
+    render() {
+        return (
+            <Con>{this.props.children}</Con>
+        )
+    }
+}
+
 
 const Section = styled.div`
     margin-top: 30px;
@@ -47,7 +58,7 @@ const Section = styled.div`
 `;
 
 const Divider = styled.div`
-    border: grey solid 10px;
+    border: grey solid 3px;
 `;
 
 const BoxHeader = styled.header`

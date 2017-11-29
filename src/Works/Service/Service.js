@@ -10,7 +10,8 @@ import {
     Box,
     InlineDiv
 } from '../Template';
-
+import Team from './teamname.png';
+import Value from './value.png';
 
 
 class Service extends Component {
@@ -19,17 +20,13 @@ class Service extends Component {
             <Container>
                 <h1>Activity Design</h1>
                 <Section>
-                    <InlineDiv>
+                    <InlineDiv style={{width: '60%'}}>
                         <h2>Little Holmes in Leofoo Wonderland (2016)</h2>
                         <p>Leofoo Resort Guanshi is an ecological hotel located in Hsinchu, Taiwan. They attract many visitors by providing the chance wchich people can interact with animals. However, they found most of their customers are not repeated customers. Therefore, they want to attract more repeat customers by improving their service. </p>
                     </InlineDiv>
 
-                    <InlineDiv>
-                        <h2>Team Role</h2>
-                        <p>
-                            Our team made up by 3 students from departments of Library and Information Science, Psychology and Civil Engineering separately. We did UX research and ideated together.<br/>
-                            The UI was designed by Ben, the Library and Information Science student. I am responsible for making the game workable by Unity3D(C#) and Vuforia.
-                        </p>
+                    <InlineDiv style={{width: '40%'}}>
+                        <img style={{maxHeight: 160}} src={Team} alt=""/>
                     </InlineDiv>
                 </Section>
 
@@ -38,10 +35,10 @@ class Service extends Component {
                     <p>User Experience Research (Contextual Inquiry), User Experience Design, Unity3D, C</p>
                 </Section>
 
-                <Section>
+                <Section style={{backgroundColor: '#F3EADC'}}>
                     <h2>Methodology</h2>
 
-                    <div style={{width: '60vw'}}>
+                    <div style={{width: 'calc(100% - 225px)'}}>
                         <Box header={"User Experience Research"}>
                             <BoxSection>
                                 <h3>
@@ -66,14 +63,18 @@ class Service extends Component {
                         </div>
                     </div>
 
-                    <div style={{marginLeft: '60vw', width: 225}}>
+                    <div style={{marginLeft: 'calc(100% - 225px)', width: 225}}>
                         <Box header={"User Test"}>
                             <BoxSection>
                                 <h3>Design Itereation</h3>
                             </BoxSection>
                         </Box>
                     </div>
-
+                    <div style={{paddingBottom: 40}}>
+                        <img src={Value} alt=""/>
+                    </div>
+                </Section>
+                <Section>
                     <Box header={"How it works?"}>
                         <How/>
                     </Box>

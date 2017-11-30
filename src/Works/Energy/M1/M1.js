@@ -72,21 +72,23 @@ const Model = styled.div`
         vertical-align: top;
     }
     h2 {
-        display: inline-block;
         width: 250px;
         vertical-align: top;
         margin: 0;
     }
 
     img {
-        width: 360px;
+        width: 40%;
+        margin-left: 5%;
+        display: inline-block;
     }
 
     p {
         display: inline-block;
-        width: 360px;
+        width: 40%;
         margin: 0;
         margin-left: 30px;
+        margin-top: 45px;
     }
 `;
 

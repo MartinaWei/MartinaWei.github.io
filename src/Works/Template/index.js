@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Con = styled.div`
-    & > * {
+    background-color: white;
+    padding-top: 20px;
+    
+    .pad-left {
         padding-left: 30px;
     }
 
@@ -28,7 +31,6 @@ const Con = styled.div`
     img {
         max-width: 100%;
         margin: auto;
-        display: inline-block;
         display: block;
     }
 `;
@@ -58,7 +60,7 @@ const Section = styled.div`
 `;
 
 const Divider = styled.div`
-    border: grey solid 3px;
+    border: #494949 solid 3px;
 `;
 
 const BoxHeader = styled.header`
@@ -100,6 +102,12 @@ const InlineDiv = styled.div`
     padding-right: 50px;
 `;
 
+const Intro = styled.img`
+    position: fixed;
+    z-index: -1;
+    top: 0;
+`;
+
 export {
     Container,
     Section,
@@ -107,5 +115,6 @@ export {
     BoxHeader,
     BoxSection,
     Box,
-    InlineDiv
+    InlineDiv,
+    Intro
 };

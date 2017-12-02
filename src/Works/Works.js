@@ -12,7 +12,7 @@ const Container = styled.div`
     height: 100vh;
     max-width: 870px;
     margin: 0 auto;
-    padding-top: 20vh;
+    padding-top: 15vh;
     box-sizing: border-box;
     font-weight: bold;
 

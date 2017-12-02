@@ -10,12 +10,15 @@ import DNA from './img/DNA_word.png';
 const Container = styled.div`
     height: 100vh;
     min-height: 600px;
+    display: flex;
+    align-items: center;
 `
 
 const MidContainer = styled.div`
     display: flex;
     padding-top: 61px;
     box-sizing: border-box;
+    justify-content: center;
 `;
 
 
@@ -57,8 +60,8 @@ const ImgContainer = styled.div`
 class About extends Component {
     render() {
         return (
-            <Container>
-                <MidContainer>
+            <Container className="row align-items-center">
+                <MidContainer className="col">
                     <LeftDiv>
                         <div style={{width: "50%", display: "inline-block"}}>
                             <h1>

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Con = styled.div`
     background-color: white;
     padding-top: 20px;
+    min-height: 100vh;
 
     .pad-left {
         padding-left: 30px;
@@ -106,6 +107,7 @@ const Intro = styled.div`
     position: fixed;
     z-index: -1;
     top: 0;
+    max-width: 1024px;
 `;
 
 export {

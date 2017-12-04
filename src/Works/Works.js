@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import img1 from './img1.png';
 import img2 from './img2.png';
 import img3 from './img3.png';
+import img4 from './img4.png';
 import img5 from './img5.png';
 import { Link } from 'react-router-dom';
 
@@ -57,9 +58,9 @@ class Works extends Component {
                         <img src={img3} alt=""/>
                     </div>
                 </Link>
-                <Link to="/">
+                <Link to="/health">
                     <div className="card">
-                        <p id="works-img4">health care<br/>for Old citizens</p>
+                        <img src={img4} alt=""/>
                     </div>
                 </Link>
                 <Link to="/">

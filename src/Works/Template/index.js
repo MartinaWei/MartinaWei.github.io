@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Con = styled.div`
     background-color: white;
     padding-top: 20px;
-    
+
     .pad-left {
         padding-left: 30px;
     }
@@ -102,7 +102,7 @@ const InlineDiv = styled.div`
     padding-right: 50px;
 `;
 
-const Intro = styled.img`
+const Intro = styled.div`
     position: fixed;
     z-index: -1;
     top: 0;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import How from './How.js';
 import {
     Container,
     Section,
@@ -11,6 +10,7 @@ import {
     InlineDiv,
     Intro
 } from '../Template';
+import How from './How.js';
 import Team from './teamname.png';
 import Value from './value.png';
 import Main from './main.png';
@@ -25,7 +25,9 @@ class Service extends Component {
     render() {
         return (
             <div>
-                <Intro src={Main}/>
+                <Intro>
+                    <img src={Main} alt=""/>
+                </Intro>
                 <Container style={ConStyle}>
                     <div className="padding">
                         <div className="pad-left">

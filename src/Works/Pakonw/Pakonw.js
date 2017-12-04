@@ -57,7 +57,9 @@ class Pakonw extends Component {
     render() {
         return (
             <div>
-                <Intro src={Main}></Intro>
+                <Intro>
+                    <img src={Main} alt=""/>
+                </Intro>
                 <Container style={{marginTop: 400}}>
                     <h1>Helth Care Project I</h1>
                     <Section>

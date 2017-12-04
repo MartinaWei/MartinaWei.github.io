@@ -15,7 +15,9 @@ class Energy extends Component {
     render() {
         return (
             <div>
-                <Intro src={Main} />
+                <Intro>
+                    <img src={Main} alt=""/>
+                </Intro>
                 <Container style={{marginTop: 280}}>
                     <h1>Energy Analysis</h1>
                     <Section>

@@ -49,7 +49,6 @@ const Card = ({ title, text }) => (
 );
 
 class Pakonw extends Component {
-
     render() {
         return (
             <div>

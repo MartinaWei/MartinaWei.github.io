@@ -80,9 +80,9 @@ class About extends Component {
                             </div>
                             <div className="_img">
                                 <img src={cv} alt=""/>
-                                <img src={facebook} alt=""/>
-                                <img src={github} alt=""/>
-                                <img src={linkedin} alt=""/>
+                                <a href="https://www.facebook.com/ytmtna"><img src={facebook} alt=""/></a>
+                                <a href="https://github.com/MartinaWei"><img src={github} alt=""/></a>
+                                <a href="https://www.linkedin.com/in/yang-ting-wei-629107ab/"><img src={linkedin} alt=""/></a>
                             </div>
                         </div>
                         <ImgContainer>

@@ -63,7 +63,7 @@ class Works extends Component {
                         <img src={img4} alt=""/>
                     </div>
                 </Link>
-                <Link to="/">
+                <Link to="/flow">
                     <div className="card">
                         <img src={img5} alt=""/>
                     </div>

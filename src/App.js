@@ -7,6 +7,7 @@ import Service from './Works/Service/Service.js';
 import Energy from './Works/Energy/Energy.js';
 import Pakonw from './Works/Pakonw/Pakonw.js';
 import Health from './Works/Health/Health.js';
+import Flow from './Works/Flow/Flow.js';
 import { Element, Link } from 'react-scroll';
 
 
@@ -132,6 +133,9 @@ class App extends Component {
                         )} />
                         <Route path="/health" render={() => (
                             <Health/>
+                        )}/>
+                        <Route path="/flow" render={() => (
+                            <Flow/>
                         )}/>
                     </Container>
                 </div>

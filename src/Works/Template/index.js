@@ -76,7 +76,7 @@ const Section = styled.div`
 `;
 
 const Divider = styled.div`
-    border: #494949 solid 3px;
+    border: #494949 solid 2px;
 `;
 
 const BoxHeader = styled.header`

@@ -37,6 +37,15 @@ const Con = styled.div`
     }
 `;
 
+
+const Back = styled.div`
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: 20px;
+`;
+
 class Container extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -44,7 +53,12 @@ class Container extends React.Component {
 
     render() {
         return (
-            <Con {...this.props}>{this.props.children}</Con>
+            <Con {...this.props}>
+                {this.props.children}
+                <Back onClick={() => {window.history.back()}}>
+                    back
+                </Back>
+            </Con>
         )
     }
 }

@@ -84,6 +84,14 @@ class Container extends React.Component {
                 }}>
                     <Link>
                         <NavLink
+                            exact
+                            activeClassName="active"
+                            style={{textDecoration: 'none'}} to='/'>
+                            Home
+                        </NavLink>
+                    </Link>
+                    <Link>
+                        <NavLink
                             activeClassName="active"
                             style={{textDecoration: 'none'}} to='/service'>
                             UX - Service Design

@@ -31,6 +31,8 @@ const Header = styled.div`
 const LinkContainer = styled.div`
     width: 300px;
     display: inline-block;
+    position: relative;
+    left: 24%;
 
     a {
         margin: 10px;

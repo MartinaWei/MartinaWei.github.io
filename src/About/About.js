@@ -28,6 +28,14 @@ const LeftDiv = styled.div`
     padding-right: 0;
     box-sizing: border-box;
 
+    .noto {
+        font-family: Noto Sans;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
     h1 {
         font-size: 24px;
     }
@@ -64,11 +72,11 @@ class About extends Component {
                 <MidContainer className="col">
                     <LeftDiv>
                         <div style={{width: "50%", display: "inline-block"}}>
-                            <h1>
+                            <h1 className="noto bold">
                                 Yang-Ting<br/>
                                 Wei
                             </h1>
-                            <p>
+                            <p className="noto bold">
                                 mtnawei@gmail.com<br/>
                                 Taipei, Taiwan
                             </p>
@@ -79,7 +87,7 @@ class About extends Component {
                                 Proficient in designing models and algorithm to analyze human behavior.
                             </div>
                             <div className="_img">
-                                <img src={cv} alt=""/>
+                                <a href="https://drive.google.com/file/d/17gojq5MjnllI1mgUpHVNM4Hz6Bj7AgVp/view?usp=sharing"><img src={cv} alt=""/></a>
                                 <a href="https://www.facebook.com/ytmtna"><img src={facebook} alt=""/></a>
                                 <a href="https://github.com/MartinaWei"><img src={github} alt=""/></a>
                                 <a href="https://www.linkedin.com/in/yang-ting-wei-629107ab/"><img src={linkedin} alt=""/></a>

@@ -47,7 +47,7 @@ class Health extends Component {
         return (
             <div>
                 <Intro>
-                    <h2>Helth Care for Elder Citizens - Pattern analysis</h2>
+                    <h2>Health Care for Elder Citizens - Pattern analysis</h2>
                     <p>Elders citizens always need more care from their family. However, most of their family have to work. Therefore, some of them will choose pasive care system to look after their elder families. To provide accuracy alert and notify their families we design some algorithm structures to improve accuracy in the forecasting elders pattens.</p>
 
                     <div className="row">
@@ -65,9 +65,7 @@ class Health extends Component {
                         </div>
                     </div>
 
-
-
-                    <div style={{marginTop: 50}} className="row">
+                    <div style={{marginTop: 20}} className="row">
                         <div>
                             <img style={{marginLeft: 120}} src={Elder} alt=""/>
                         </div>
@@ -98,7 +96,7 @@ class Health extends Component {
 
 
                 </Intro>
-                <Container style={{marginTop: 650, paddingTop: 30}}>
+                <Container style={{marginTop: 720, paddingTop: 30}}>
                     <img src={Pattern} alt=""/>
                     <PatternTitle>Pattern Prediction</PatternTitle>
                     <p style={PatternText}>

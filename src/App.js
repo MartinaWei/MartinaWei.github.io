@@ -113,13 +113,13 @@ class App extends Component {
                     <Container>
                         <Route path="/" exact render={() => (
                             <div>
-                                <Element name="About">
+                                <Element name="About" id="about">
                                     <About></About>
                                 </Element>
-                                <Element name="Professions">
+                                <Element name="Professions" id="pro">
                                     <Pro></Pro>
                                 </Element>
-                                <Element name="Works">
+                                <Element name="Works" id="works">
                                     <Works></Works>
                                 </Element>
                             </div>

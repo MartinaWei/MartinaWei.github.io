@@ -55,22 +55,22 @@ class Pakonw extends Component {
                 <Intro>
                     <img src={Main} alt=""/>
                 </Intro>
-                <Container style={{marginTop: 380}}>
+                <Container style={{marginTop: 450}}>
                     <h2>Paknow</h2>
-                    <p>Paknow was named after panel. It is a system to save patient’s time and provide them with trustworthy information on their waiting time in hospital.</p>
+                    <p style={{fontSize: 14}}>Paknow was named after panel. It is a system to save patient’s time and provide them with trustworthy information on their waiting time in hospital.</p>
 
                     <div className="row">
                         <div className="col-xs">
                             <h3>Where</h3>
-                            <p>Nationa Taiwan University Hospital, Taipei, Taiwan</p>
+                            <p style={{fontSize: 14}}>Nationa Taiwan University Hospital, Taipei, Taiwan</p>
                         </div>
                         <div className="col-xs">
                             <h3>When</h3>
-                            <p>Sep 2014 - Jan 2015</p>
+                            <p style={{fontSize: 14}}>Sep 2014 - Jan 2015</p>
                         </div>
                         <div className="col-xs">
                             <h3>Team</h3>
-                            <p>Collaborated with Ginny Yang, Yu-Hsuan Yeh, Tsung-Han Lu;
+                            <p style={{fontSize: 14}}>Collaborated with Ginny Yang, Yu-Hsuan Yeh, Tsung-Han Lu;
                                 Visual Design credit to Ginny Yang, Tsung-Han Lu</p>
                         </div>
                     </div>
@@ -84,10 +84,10 @@ class Pakonw extends Component {
                             <MethTitle>
                                 User Experience Research
                             </MethTitle>
-                            <p style={{margin: '10px 0'}}>
+                            <p style={{margin: '10px 0', fontSize: 15}}>
                                 <i>Contextual Problem</i>
                             </p>
-                            <p>
+                            <p style={{fontSize: 15}}>
                                 <i>Project Goal</i>
                             </p>
                         </div>
@@ -101,10 +101,10 @@ class Pakonw extends Component {
                             <MethTitle>
                                 User Experience Design
                             </MethTitle>
-                            <p style={{margin: '10px 0'}}>
+                            <p style={{margin: '10px 0', fontSize: 15}}>
                                 <i>Prototype</i>
                             </p>
-                            <p>
+                            <p style={{fontSize: 15}}>
                                 <i>Design Itereation</i>
                             </p>
                         </div>

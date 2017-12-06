@@ -107,7 +107,7 @@ class Service extends Component {
                 </Intro>
 
 
-                <Container style={{marginTop: 480}}>
+                <Container style={{marginTop: 530}}>
                     <h2>Little Holmes in Leofoo Wonderland</h2>
                     <p style={{width: 600}}>Leofoo Resort Guanshi is an ecological hotel. They attract many visitors by providing the chance wchich people can interact with animals. However, they found most of their customers are not repeated customers. Therefore, they want to attract more repeat customers by improving their service.</p>
 

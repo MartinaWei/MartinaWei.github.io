@@ -18,7 +18,7 @@ class Energy extends Component {
                 <Intro>
                     <img src={Main} alt=""/>
                 </Intro>
-                <Container style={{marginTop: 280}}>
+                <Container style={{marginTop: 350}}>
                     <h1>Energy Analysis</h1>
                     <Section>
                         <h2>Building Cunsumption Analysis (2017)</h2>

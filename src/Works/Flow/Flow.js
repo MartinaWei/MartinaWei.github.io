@@ -42,7 +42,7 @@ const Img = ({ children, src }) => (
 const Link = styled.a`
     display: block;
     text-align: center;
-    font-size: 24px;
+    font-size: 12pt;
     text-decoration: underline;
 `;
 
@@ -53,7 +53,7 @@ class Flow extends Component {
             <div>
                 <Intro>
                     <h2>Improving self-service Kiosk in Hospital</h2>
-                    <p>The aim of hospital where installed many self-service Kiosk is to save patients time and help nurses foucus on their work. However, the design of the UX process had some problems, so it cannot achieve their purpose. Therefore, the project is aiming to improve the UX of Kiosk.</p>
+                    <p style={{width: '50%'}}>The aim of hospital where installed many self-service Kiosk is to save patients time and help nurses foucus on their work. However, the design of the UX process had some problems, so it cannot achieve their purpose. Therefore, the project is aiming to improve the UX of Kiosk.</p>
 
                     <div className="row">
                         <div className="col-xs">
@@ -83,7 +83,7 @@ class Flow extends Component {
                     </div>
 
                 </Intro>
-                <Container style={{marginTop: 650, paddingTop: 30}}>
+                <Container style={{marginTop: 720, paddingTop: 30}}>
                     <PatternTitle>Some Examples of the UI Redesign</PatternTitle>
 
                     <div className="row">

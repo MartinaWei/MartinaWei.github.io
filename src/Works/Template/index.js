@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import Header from './Header.js';
+import Intro from './Intro.js';
+import { scroller } from 'react-scroll'
 
 const Con = styled.div`
     background-color: white;
@@ -43,7 +46,7 @@ const Back = styled.div`
     display: block;
     color: black !important;
     text-align: center;
-    font-size: 24px;
+    font-size: 12pt;
     text-decoration: underline;
     margin-top: 20px;
 
@@ -52,19 +55,9 @@ const Back = styled.div`
     }
 `;
 
-const Link = styled.div`
-    font-size: 16px !important;
-    font-family: 'Noto Sans' !important;
-    a:link {
-        color: #6D5A55;
-    }
-    a:visited {
-        color: #6D5A55;
-    }
-    .active {
-        color: #E5C6CC !important;
-    }
-`;
+
+
+
 
 class Container extends React.Component {
     componentDidMount() {
@@ -75,59 +68,16 @@ class Container extends React.Component {
         return (
             <Con {...this.props}>
                 {this.props.children}
-                <div style={{
-                    backgroundColor: '#CF9E8A',
-                    position: 'absolute',
-                    right: 20,
-                    top: 100,
-                    padding: 10
-                }}>
-                    <Link>
-                        <NavLink
-                            exact
-                            activeClassName="active"
-                            style={{textDecoration: 'none'}} to='/'>
-                            Home
-                        </NavLink>
-                    </Link>
-                    <Link>
-                        <NavLink
-                            activeClassName="active"
-                            style={{textDecoration: 'none'}} to='/service'>
-                            UX - Service Design
-                        </NavLink>
-                    </Link>
-                    <Link>
-                        <NavLink
-                            activeClassName="active"
-                            style={{textDecoration: 'none'}} to='/energy'>
-                            Data - Energy
-                        </NavLink>
-                    </Link>
-                    <Link>
-                        <NavLink
-                            activeClassName="active"
-                            style={{textDecoration: 'none'}} to='/pakonw'>
-                            UX - Paknow
-                        </NavLink>
-                    </Link>
-                    <Link>
-                        <NavLink
-                            activeClassName="active"
-                            style={{textDecoration: 'none'}} to='/health'>
-                            Data - Health Care I
-                        </NavLink>
-                    </Link>
-                    <Link>
-                        <NavLink
-                            activeClassName="active"
-                            style={{textDecoration: 'none'}} to='/flow'>
-                            UX - Health Care II
-                        </NavLink>
-                    </Link>
-                </div>
+
                 <Back>
-                    <NavLink to="/">back</NavLink>
+                    <NavLink to="/" onClick={() => {
+                        setTimeout(() => {
+                            scroller.scrollTo('Works', {
+                                duration: 500,
+                                smooth: true
+                            })
+                        }, 100)
+                    }}>Back</NavLink>
                 </Back>
             </Con>
         )
@@ -189,12 +139,7 @@ const InlineDiv = styled.div`
     padding-right: 50px;
 `;
 
-const Intro = styled.div`
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    max-width: 1024px;
-`;
+
 
 export {
     Container,

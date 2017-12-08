@@ -12,6 +12,7 @@ const Wrapper = styled.div`
     z-index: 1;
     top: 0;
     color: #4A4948;
+    left: 0;
 
     p {
         cursor: pointer;
@@ -20,6 +21,11 @@ const Wrapper = styled.div`
         text-decoration: none;
         display: inline-block;
     }
+`;
+
+const InnerWrapper = styled.div`
+    position: relative;
+    left: 24%;
 `;
 
 const Active = styled.p`
@@ -128,14 +134,11 @@ class Header extends Component {
                     this.setState({display: 'none'});
                 }}
                 >
-                <div style={{
-                    position: 'relative',
-                    left: '13.5%',
-                }}>
+                <InnerWrapper>
                     <p onClick={() => this.clickHandler('About')}>About</p>
                     <p onClick={() => this.clickHandler('Professions')}>Professions</p>
                     <Active onMouseEnter={() => this.setState({display: 'block'})}>Works</Active>
-                </div>
+                </InnerWrapper>
                 <div ref="list" style={{
                     backgroundColor: '#CF9E8A',
                     position: 'absolute',

@@ -14,12 +14,14 @@ class Intro extends Component {
 
     render() {
         return (
-            <Wrapper>
+            <div>
                 <Header/>
-                <div style={{marginTop: 80}}>
-                    {this.props.children}
-                </div>
-            </Wrapper>
+                <Wrapper>
+                    <div style={{marginTop: 80}}>
+                        {this.props.children}
+                    </div>
+                </Wrapper>
+            </div>
         );
     }
 

@@ -9,7 +9,7 @@ const Con = styled.div`
     background-color: white;
     padding-top: 20px;
     min-height: 100vh;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 
     .pad-left {
         padding-left: 30px;

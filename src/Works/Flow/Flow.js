@@ -73,7 +73,7 @@ class Flow extends Component {
                         </div>
                     </div>
 
-                    <div style={{marginTop: 50}} className="row">
+                    <div style={{marginTop: 10}} className="row">
                         <div>
                             <img style={{marginLeft: 120}} src={Elder} alt=""/>
                         </div>

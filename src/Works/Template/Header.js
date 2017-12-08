@@ -138,18 +138,18 @@ class Header extends Component {
                     <p onClick={() => this.clickHandler('About')}>About</p>
                     <p onClick={() => this.clickHandler('Professions')}>Professions</p>
                     <Active onMouseEnter={() => this.setState({display: 'block'})}>Works</Active>
+                    <div ref="list" style={{
+                        backgroundColor: '#CF9E8A',
+                        position: 'absolute',
+                        left: '51%',
+                        top: 61,
+                        padding: 10,
+                        zIndex: 2,
+                        display: this.state.display
+                    }}>
+                        <List/>
+                    </div>
                 </InnerWrapper>
-                <div ref="list" style={{
-                    backgroundColor: '#CF9E8A',
-                    position: 'absolute',
-                    right: '23%',
-                    top: 80,
-                    padding: 10,
-                    zIndex: 2,
-                    display: this.state.display
-                }}>
-                    <List/>
-                </div>
             </Wrapper>
         );
     }
